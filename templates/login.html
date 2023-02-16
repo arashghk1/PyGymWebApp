@@ -1,0 +1,78 @@
+{% extends "index.html" %}
+{% block title %}{{ super() }} - Log In{% endblock %}
+{% block head %}
+    <!-- <link rel="stylesheet" href="/css/login.css"> -->
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+
+{% endblock %}
+{% block content %}
+<body>
+{% for message in get_flashed_messages() %}
+    {{ message }}<br/>
+{% endfor %}
+<div class="container" id="loginbody">
+    <form action="/login" method="post">
+        {{ form.csrf_token }}
+        {{ form.username.label }} {{ form.username }}<br/>
+        {{ form.password.label }} {{ form.password }}<br/>
+        {{ form.submit }}
+    </form>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#{% extends "index.html" %}#}
+{##}
+{#{% block head %}#}
+{#{% block title %}{{ super() }} - Log In{% endblock %}#}
+{##}
+{##}
+{##}
+{#    <!-- <link rel="stylesheet" href="/css/login.css"> -->#}
+{#    {{ super() }}#}
+{#    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">#}
+{##}
+{##}
+{##}
+{##}
+{#{% endblock %}#}
+{##}
+{#{% block content %}#}
+{#    <body>#}
+{##}
+{#  <div class="container" id="loginbody">#}
+{##}
+{#    <form action="/login" method="post">#}
+{#        <h3>Login Here</h3>#}
+{##}
+{#        {{ form.username.label }}{{ form.username }}<br/>#}
+{##}
+{#         {{ form.password.label }}{{ form.password }}<br/>#}
+{##}
+{#        {{ form.submit }}#}
+{#{% for message in get_flashed_messages() %}#}
+{#    {{ message }}<br/>#}
+{#{% endfor %}#}
+{##}
+{#    </form>#}
+{#  </div>#}
+{#    </body>#}
+{#    {% endblock %}#}

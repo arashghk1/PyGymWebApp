@@ -1,0 +1,53 @@
+{% extends "index.html" %}
+
+  {% block head %}
+{% block title %}{{ super() }} - Cart{% endblock %}
+{{ super() }}
+    <script src="../static/js/cart.js"></script>
+  {% endblock %}
+    {% block content %}
+<body>
+    <div>
+        
+
+   
+<div class="container-fluid p-5">
+        <div class="mb-5 text-center">
+            <h5 class="text-primary text-uppercase">The Store</h5>
+            <h1 class="display-3 text-uppercase mb-0">Your Shopping Cart</h1>
+        </div>
+        
+    </div>
+
+    <div class="card" id="item1"></div>
+    <img src="/static/images/products/supplement1VitE.jpg">
+    <div class="title"> Vitamin E</div>
+    <div>
+        <label>Size: </label>
+        <label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </label>
+    </div>
+    <button id="">Add to Cart</button>
+
+
+
+    <div class="cart" id="cart">
+        <div class="title"><hr/>
+            Cart
+        </div>
+        <div id="title">
+
+        </div>
+    </div>
+
+    
+</div>
+
+    </body>
+{% endblock %}

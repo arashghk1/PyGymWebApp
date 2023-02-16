@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% macro render_field(field) %}
+  <dt>{{ field.label }}
+  <dd>{{ field(**kwargs)|safe }}
+  {% if field.errors %}
+    <ul class=errors>
+    {% for error in field.errors %}
+      <li>{{ error }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+  </dd>
+{% endmacro %}
+
+
+{% block head %}
+{% block title %}{{ super() }} - Log In{% endblock %}
+
+    <!-- <link rel="stylesheet" href="/css/login.css"> -->
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+
+{% endblock %}
+
+
+{% block content %}
+<body>
+
+
+    <form action="/register" method="post">
+        {{ form.csrf_token }}
+        <h3>Register New Account</h3>
+        <label for="username">Enter Your Username</label> {{ form.username }}<br/>
+        <label for="password">Enter Your Password</label>{{ form.password }}<br/>
+        <label for="password2">Confirm Your Password</label> {{ form.password2 }}<br/>
+        <label for="Email">Enter your Email</label> {{ form.email }}<br/>
+        <label for="Phone">Enter your Phone number</label>{{ form.phone }}<br/>
+        {{ form.submit }}
+
+    </form>
+
+</body>
+    {% endblock %}

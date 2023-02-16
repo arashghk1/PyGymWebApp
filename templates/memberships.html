@@ -1,0 +1,174 @@
+{% extends "index.html" %}
+{% block title %}{{ super() }} - Memberships{% endblock %}
+
+{% block content %}
+
+
+<body>
+<div class="container-fluid p-5">
+        <div class="mb-5 text-center">
+            <h5 class="text-primary text-uppercase">The Store</h5>
+            <div style="margin-top: -50px; margin-bottom: 20px; margin-left: 60px;">
+                <h1 class="display-3 text-uppercase mb-0" >Memberships</h1>
+            </div>
+            
+        </div>
+        <div class="tab-class text-center">
+            <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase rounded-pill mb-5">
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill text-white active" data-bs-toggle="pill" href="#tab-1">Bronze</a>
+                    
+                </li>
+                
+                <li class="nav-item">
+                    
+                    <a class="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-2">Silver</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-3">Gold</a>
+                </li>
+            </ul>
+            <div>
+                <button class="membershipbutton" onclick="window.open('purchasemembership.html')">
+                    Purchase Membership Here
+                </button>
+            </div>
+           
+            <div class="tab-content">
+               
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">7-day access to our gym</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Access to weight room and cardio room</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 210px" />
+                                <h6 class="text-uppercase text-primary">Virtual and in-person daily classes</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane fade p-0">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">7-day access to our gym</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Access to weight room and cardio room</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 210px" />
+                                <h6 class="text-uppercase text-primary">Virtual and in-person daily classes</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Full access to pool and spa</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Unlimited use of massage chairs</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+
+                <div id="tab-3" class="tab-pane fade p-0">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">7-day access to our gym</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Access to weight room and cardio room</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 210px" />
+                                <h6 class="text-uppercase text-primary">Virtual and in-person daily classes</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Full access to pool and spa</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Unlimited use of massage chairs</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 210px" />
+                                <h6 class="text-uppercase text-primary">Unlimited use of tanning room and equipment</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Share your membership card</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" />
+                                <h6 class="text-uppercase text-primary">Personal training with our certified trainers at a discount</h5>
+                                <p class="text-uppercase text-secondary mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+{% endblock %}

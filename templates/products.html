@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PyGYM - Gym, Networking, Nutrition</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid p-5">
+        <div class="mb-5 text-center">
+            <h5 class="text-primary text-uppercase">The Store</h5>
+            <h1 class="display-3 text-uppercase mb-0">Order Online</h1>
+        </div>
+        <div class="tab-class text-center">
+            <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase rounded-pill mb-5">
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill text-white active" data-bs-toggle="pill" href="#tab-1">Supplements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-2">Protein Powder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-3">Apparel and Other Products</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div id="item1" class="card">
+                                <img style="max-width: 180px" src="/images/products/supplement1VitE.jpg"/>
+                                <h6 class="title">Optimized Vitamin E Capsules | 73mg | D-Alpha Tocopheryl Succinate | Antioxidant</h5>
+                                <p class="text-uppercase text-secondary mb-0">$14.99-$34.99</p>
+                                
+                                <button onclick="addToCart(item1)">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" src="/images/products/supplement2MNucleotide.jpg"/>
+                                <h6 class="text-uppercase text-primary">Nicotinamide Mononucleotide Capsules | 250mg | NAD+ Precursor | NMN Supplement</h5>
+                                <p class="text-uppercase text-secondary mb-0">$12.99-$144.99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 210px" src="/images/products/supplement2VitaminD3K2.jpg"/>
+                                <h6 class="text-uppercase text-primary">OmegaTAU Capsules | Enhanced Uridine + DHA</h5>
+                                <p class="text-uppercase text-secondary mb-0">$35.99-$64.99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                            <img style="max-width: 180px" src="/images/products/supplement2OmegaTAU.jpg"/>
+                                <h6 class="text-uppercase text-primary">Vitamin D3 + K2 With Vitamin C Tablets | Cholecalciferol + Menaquinone-7 (MK-7)</h5>
+                                <p class="text-uppercase text-secondary mb-0">$14.99-$34.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane fade p-0">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                            <img style="max-width: 180px" src="/images/products/Powder1Blessed.jpg"/>
+                                <h6 class="text-uppercase text-primary">Blessed | Plant Based Protein |  2lb</h5>
+                                <p class="text-uppercase text-secondary mb-0">$59.99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                            <img style="max-width: 180px" src="/images/products/Powder2Vega.jpg"/>
+                                <h6 class="text-uppercase text-primary">Beyond Yourself | Vegan | 2lbs</h5>
+                                <p class="text-uppercase text-secondary mb-0">$49.99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                            <img style="max-width: 180px" src="/images/products/Powder3RevoHighWhey.jpg"/>
+                                <h6 class="text-uppercase text-primary">Revolution | High Whey 6lb | Revolution Nutrition</h5>
+                                <p class="text-uppercase text-secondary mb-0">$89.99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" src="/images/products/Powder4jCreatine.jpg"/>
+                                <h6 class="text-uppercase text-primary">MuscleTech Creactor 256g | MuscleTech</h5>
+                                <p class="text-uppercase text-secondary mb-0">$39.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-pane fade p-0">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                            <img style="max-width: 180px" src="/images/products/Additional1S.jpg"/>
+                                <h6 class="text-uppercase text-primary">Performer| Perfect Shaker 800ml</h5>
+                                <p class="text-uppercase text-secondary mb-0">$14.99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                            <img style="max-width: 180px" src="/images/products/Additional2R.jpg"/>
+                                <h6 class="text-uppercase text-primary">RISE | Wrist Wraps</h5>
+                                <p class="text-uppercase text-secondary mb-0">$29.99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                            <img style="max-width: 180px" src="/images/products/Additional3G.jpg"/>
+                                <h6 class="text-uppercase text-primary">Grizzly | Black Washable Gloves</h5>
+                                <p class="text-uppercase text-secondary mb-0">$39.99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="bg-dark rounded text-center py-5 px-3">
+                                <img style="max-width: 180px" src="/images/products/Additional4G.jpg"/>
+                                <h6 class="text-uppercase text-primary">Grizzly | 4" Enforce Belt Black</h5>
+                                <p class="text-uppercase text-secondary mb-0">$69.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart" id="cart">
+            <div class="title">
+                Cart
+            </div>
+            <div id="title">
+    
+            </div>
+        </div>
+
+
+    </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/cart.js"></script>
+    </body>
