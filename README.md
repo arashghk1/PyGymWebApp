@@ -14,7 +14,7 @@ The PyGym web application comes with the following features:
 To install the PyGym web application on your local machine, follow these steps:
 
 - Clone the Github repository: https://github.com/arashghk1/PyGymWebApp
-- Create a virtual environment and install the dependencies using the requirements.txt file
+- Create a virtual environment and install the dependencies using the requirement.txt file
 - Create a MySql database and add the necessary tables using the schema.sql file
 - Add your Stripe API keys to the config.py file
 - Run the Flask application using python app.py command
