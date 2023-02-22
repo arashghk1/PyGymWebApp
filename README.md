@@ -19,7 +19,9 @@ To install the PyGym web application on your local machine, follow these steps:
 - Run the Flask application using python app.py command
 
 # Usage
-To use the PyGym web application, open a web browser and navigate to localhost:5000. From there, you can create an account or log in if you already have one. Once logged in, you can purchase memberships or products using the secure Stripe integration. The admin panel can be accessed at localhost:5000/admin for managing users and products.
+- To use the PyGym web application, open a web browser and navigate to localhost:5000. From there, you can create an account or log in if you already have one. 
+- Once logged in, you can purchase memberships or products using the secure Stripe integration. 
+- The admin panel can be accessed at localhost:5000/admin for managing users and products.
 
 # Contributing
 Contributions to the project are welcome. If you wish to contribute, please fork the repository and make your changes on a separate branch. Once you are done, create a pull request to have your changes reviewed and merged into the main codebase.
